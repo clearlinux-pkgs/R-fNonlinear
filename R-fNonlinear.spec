@@ -4,7 +4,7 @@
 #
 Name     : R-fNonlinear
 Version  : 3042.79
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/fNonlinear_3042.79.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fNonlinear_3042.79.tar.gz
 Summary  : Rmetrics - Nonlinear and Chaotic Time Series Modelling
@@ -18,7 +18,6 @@ BuildRequires : R-fBasics
 BuildRequires : R-timeDate
 BuildRequires : R-timeSeries
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 univariate time series including independence and neglected
@@ -36,21 +35,22 @@ lib components for the R-fNonlinear package.
 
 %prep
 %setup -q -c -n fNonlinear
+cd %{_builddir}/fNonlinear
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571831479
+export SOURCE_DATE_EPOCH=1589584908
 
 %install
-export SOURCE_DATE_EPOCH=1571831479
+export SOURCE_DATE_EPOCH=1589584908
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
