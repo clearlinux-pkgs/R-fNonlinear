@@ -4,7 +4,7 @@
 #
 Name     : R-fNonlinear
 Version  : 3042.79
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/fNonlinear_3042.79.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fNonlinear_3042.79.tar.gz
 Summary  : Rmetrics - Nonlinear and Chaotic Time Series Modelling
