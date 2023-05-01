@@ -4,7 +4,7 @@
 #
 Name     : R-fNonlinear
 Version  : 4021.81
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/fNonlinear_4021.81.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fNonlinear_4021.81.tar.gz
 Summary  : Rmetrics - Nonlinear and Chaotic Time Series Modelling
